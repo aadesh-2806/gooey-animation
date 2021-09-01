@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    filter: contrast(50);
+}
+span{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    animation: animate 5s ease-in-out infinite;
+    filter: blur(25px);
+}
+@keyframes animate{
+    0%{
+        margin: 10px;
+    }
+    50%{
+        margin: -50px;
+    }
+    100%{
+        margin: 10px;
+    }
+}
